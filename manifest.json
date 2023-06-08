@@ -3,21 +3,19 @@
   "name": "Trust Yourself!",
   "version": "1.0",
   "permissions": ["activeTab"],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
-    }
-  },
+  // "action": {
+  //   "default_icon": {
+  //     "16": "images/download-2.jpg",
+  //     "48": "images/download-2.jpg",
+  //     "128": "images/download-2.jpg"
+  //   }
+  // },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
+      "matches": ["http://*/*", "https://*/*"],
       "js": ["./main.js"]
     }
-  ]
-  "background": {
-    "service_worker": "background.js"
-  }
+  ],
+
+  "host_permissions": ["http://*/*", "https://*/*"]
 }
