@@ -3,13 +3,6 @@
   "name": "Trust Yourself!",
   "version": "1.0",
   "permissions": ["activeTab"],
-  // "action": {
-  //   "default_icon": {
-  //     "16": "images/download-2.jpg",
-  //     "48": "images/download-2.jpg",
-  //     "128": "images/download-2.jpg"
-  //   }
-  // },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
